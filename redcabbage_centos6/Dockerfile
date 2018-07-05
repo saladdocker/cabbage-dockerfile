@@ -11,11 +11,5 @@ RUN yum -y update && \
  yum clean all
 
 
-RUN useradd purple
-
-USER purple
-WORKDIR /home/purple
-
-
 CMD ["/bin/bash"]
 
