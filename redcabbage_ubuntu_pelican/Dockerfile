@@ -1,7 +1,7 @@
 ###
 from ubuntu:18.04
 
-LABEL maintainer="purple cabbage"
+LABEL maintainer="Red Cabbage"
 LABEL VERSION="1.0" ARCHITECTURE="amd64"
 
 RUN apt update && \
@@ -13,12 +13,12 @@ RUN apt update && \
                  
 
 
-RUN adduser --disabled-password --gecos ""  purple
-USER purple
+RUN adduser --disabled-password --gecos "" cabbage 
+USER cabbage
 
 RUN cd $HOME && \
-    mkdir -p  PDevWS/purpleblog && \
-    cd PDevWS/purpleblog  && \
+    mkdir -p  RCDevWS/cabbageblog && \
+    cd RCDevWS/cabbageblog  && \
     python3 -m venv devenv && \
     cd devenv && \
     . ./bin/activate  && \

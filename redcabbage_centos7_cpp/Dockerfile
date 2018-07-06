@@ -11,10 +11,10 @@ RUN yum -y update && \
  yum clean all
 
 
-RUN useradd purple
+RUN useradd cabbage
 
-USER purple
-WORKDIR /home/purple
+USER cabbage
+WORKDIR /home/cabbage
 
 
 CMD ["/bin/bash"]

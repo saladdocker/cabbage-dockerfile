@@ -1,7 +1,7 @@
 ###
 from ubuntu:18.04
 
-LABEL maintainer="purple cabbage"
+LABEL maintainer="Red Cabbage"
 LABEL VERSION="1.0" ARCHITECTURE="amd64"
 
 RUN apt update && \
