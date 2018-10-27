@@ -14,11 +14,11 @@ RUN apt update && \
 
 
 RUN adduser --disabled-password --gecos "" cabbage 
-USER cabbage
+USER  cabbage
 
 RUN cd $HOME && \
-    mkdir -p  RCDevWS/cabbageblog && \
-    cd RCDevWS/cabbageblog  && \
+    mkdir -p  RCDevWS/saladworks && \
+    cd RCDevWS/saladworks  && \
     python3 -m venv devenv && \
     cd devenv && \
     . ./bin/activate  && \
